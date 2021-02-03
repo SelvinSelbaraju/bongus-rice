@@ -17,10 +17,10 @@ function Reviews() {
                     return (
                         <Carousel.Item className="review-item">
                         <div className="review-size px-5 pt-3">
-                            <p className="mt-md-3">{review}</p>
+                            
                         </div>
                         <Carousel.Caption>
-                            
+                            <p className="mt-md-3">{review}</p>
                             <h5>{name}</h5>
                             <h6>{location}</h6>
                         </Carousel.Caption>

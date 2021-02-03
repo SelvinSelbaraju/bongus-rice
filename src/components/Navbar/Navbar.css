@@ -18,3 +18,7 @@
   font-weight: 700;
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+.show {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
