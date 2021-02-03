@@ -9,7 +9,7 @@ import './LandingPage.css'
 
 function LandingPage() {
     return (
-        <Container fluid id="home" className="landing-container mt-md-5">
+        <Container fluid id="home" className="landing-container mt-3 mt-md-5">
             <Row className="align-items-center">
                 <Col className="text-center" xs={12} md={6}>
                     <h2 className="font-weight-light">fresh, ethical and good for the soul</h2>

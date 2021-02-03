@@ -8,9 +8,10 @@ import './Menu.css'
 
 function Menu() {
     return (
-        <Container id="menu" className="mt-5">
+        <div id="menu">
+        <Container fluid className="menu-container">
             <Col className="menu-tab text-center">
-            <h3>Menu</h3>
+            <h3 className="mt-3">Menu</h3>
             </Col>
             <Row className="text-center">
                 <Col xs={12} md={6}>
@@ -19,8 +20,8 @@ function Menu() {
                         vegetarianItems.map(item => {
                             const { title, dietary, description } = item
                             return (
-                                <Card bg="dark">
-                                    <Card.Title>{title}</Card.Title>
+                                <Card bg="dark" className="my-3">
+                                    <Card.Title className="mt-2">{title}</Card.Title>
                                     <Card.Subtitle className="text-muted">{dietary}</Card.Subtitle>
                                     <Card.Body>{description}</Card.Body>
                                 </Card>
@@ -34,8 +35,8 @@ function Menu() {
                         nonVegetarianItems.map(item => {
                             const { title, dietary, description } = item
                             return (
-                                <Card bg="dark">
-                                    <Card.Title>{title}</Card.Title>
+                                <Card bg="dark" className="my-3">
+                                    <Card.Title className="mt-2">{title}</Card.Title>
                                     <Card.Subtitle className="text-muted">{dietary}</Card.Subtitle>
                                     <Card.Body>{description}</Card.Body>
                                 </Card>
@@ -45,6 +46,7 @@ function Menu() {
                 </Col>
             </Row>
         </Container>
+        </div>
     )
 }
 
