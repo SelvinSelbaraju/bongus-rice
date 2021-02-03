@@ -9,8 +9,8 @@ import './LandingPage.css'
 
 function LandingPage() {
     return (
-        <Container fluid id="home" className="landing-container mt-3 mt-md-5">
-            <Row className="align-items-center">
+        <Container>
+            <Row id="home" className="mt-3 mt-md-5 align-items-center">
                 <Col className="text-center" xs={12} md={6}>
                     <h2 className="font-weight-light">fresh, ethical and good for the soul</h2>
                     <p className="mt-5">Our mission is to deliver traditional Asian food using fresh, natural and organic ingredients. We want to share our food with the world and give everyone nutritious yet affordable food.</p>

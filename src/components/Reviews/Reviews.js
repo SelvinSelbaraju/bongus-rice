@@ -6,7 +6,7 @@ import './Reviews.css'
 
 function Reviews() {
     return (
-        <Container fluid className="text-center my-5">
+        <Container className="text-center my-5">
             <h2>Reviews</h2>
             <h4 className="mb-3">See what other people have to say!</h4>
         <Carousel id="reviews" className="text-center">

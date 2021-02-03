@@ -9,7 +9,7 @@ import './Menu.css'
 function Menu() {
     return (
         <div id="menu">
-        <Container fluid className="menu-container">
+        <Container  className="menu-container">
             <Col className="menu-tab text-center">
             <h3 className="mt-3">Menu</h3>
             </Col>

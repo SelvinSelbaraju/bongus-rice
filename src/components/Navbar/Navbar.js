@@ -2,17 +2,18 @@ import React, { useState } from 'react'
 import { Link } from 'react-scroll'
 import { Nav } from 'react-bootstrap'
 import Navbar from 'react-bootstrap/Navbar'
+import Container from 'react-bootstrap/Container'
 import Logo from './logo.png'
 import './Navbar.css'
 
 function Navigation() {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
     window.addEventListener('resize', ()=> setScreenWidth(window.innerWidth))
-    const offset = screenWidth < 992 ? -315 : -80
+    const offset = screenWidth < 992 ? -312 : -80
     return (
         <>
         <Navbar collapseOnSelect sticky="top" className="navbar-container navbar-dark" expand="lg">
-            <Navbar.Brand className="font-weight-light" href="#home">
+            <Navbar.Brand className="font-weight-light ml-3" href="#home">
                 <img 
                     src={Logo}
                     width="60"
@@ -23,7 +24,7 @@ function Navigation() {
             </Navbar.Brand>
             <Navbar.Toggle className="navbar-toggle" aria-controls="basic-navbar-nav">
                 <span>
-                <i class="fas fa-bars fa-2x"></i>
+                <i class="fas fa-bars"></i>
                 </span>
             </Navbar.Toggle>
             <Navbar.Collapse id="basic-navbar-nav">
