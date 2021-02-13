@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(26, 77, 51, 0.95) !important;
+}
+
+.app-container {
+  background-color: #28704c !important;
+  color: #fff !important;
+}
