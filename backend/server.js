@@ -1,9 +1,11 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import Cors from 'cors';
 import Review from './models/review.js';
 
 const app = express();
 app.use(express.json());
+app.use(Cors());
 
 const dbURI = 'mongodb+srv://selvin:test1234@nodetutorial.40qua.mongodb.net/bongus?retryWrites=true&w=majority';
 
