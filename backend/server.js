@@ -8,7 +8,7 @@ app.use(express.json());
 const dbURI = 'mongodb+srv://selvin:test1234@nodetutorial.40qua.mongodb.net/bongus?retryWrites=true&w=majority';
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true})
-    .then(app.listen(8000, () => {
+    .then(app.listen(process.env.PORT || 8000, () => {
         console.log('Listening!');
     }))
     .catch((err) => {
